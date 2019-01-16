@@ -1,0 +1,19 @@
+# "-y" automatically confirms "yes" to all
+ 
+choco install jdk8 -y
+choco install googlechrome -y
+choco install nodejs -y
+choco install yarn -y
+choco install visualstudiocode -y
+choco install vlc -y
+choco install notepadplusplus -y
+choco install git -y
+choco install 7zip -y
+choco install winscp -y
+choco install sumatrapdf -y
+choco install irfanview -y
+choco install unxutils -y
+choco install foobar2000 -y
+ 
+# updates all packages
+cup all -y
