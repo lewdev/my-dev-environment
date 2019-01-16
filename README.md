@@ -25,3 +25,9 @@ Various autohotkey scripts I use.
 
 has keyshortcuts to quickly access various things on my machine.
 
+# Eclipse setup
+
+## Install Plugins
+
+1. "Darkest Theme"
+
