@@ -38,3 +38,11 @@ has keyshortcuts to quickly access various things on my machine.
 
 1. "Darkest Theme"
 
+## Additional Apps
+
+### T-Clock
+1. Right-click Date/Time on Taskbar
+2. Select "T-Clock Options"
+3. Select "Time Format" tab
+4. Check "Advanced clock format" and enter "ddd, m/dd\nh:nn tt"
+
