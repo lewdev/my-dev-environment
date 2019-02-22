@@ -50,8 +50,16 @@ Return
   }
 Return
 
-^+!F:: ;Facebook
-  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://www.facebook.com/groups/237524160104801/
+^+!F:: ;Facebook bookmarks folder
+  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe chrome://bookmarks/?id=760
+Return
+
+^+!R:: ;My Github repository
+  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://github.com/lewdev?tab=repositories
+Return
+
+^+!D:: ;My Github repository
+  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://drive.google.com
 Return
 
 ^+!Y:: ;Youtube
