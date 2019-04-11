@@ -12,8 +12,9 @@ You'll probably want to create a .gitignore file right away, to indicate all of 
 
 Add all of the relevant files.
 
-> git add
-> git commit
+> git add *
+
+> git commit -m "Initial commit" -m "Description if needed..."
 
 ## Connect it to github
 
@@ -21,10 +22,10 @@ Go to Github and create a new Repository
 
 Then run the following:
 
-> git remote add origin git@github.com:lewdev/<new_repo>
-> git push -u origin master
+> git remote add origin https://github.com/lewdev/<new_repo>
 
 OR
 
-> git remote add origin https://github.com/lewdev/<new_repo>
+> git remote add origin git@github.com:lewdev/<new_repo>
 
+> git push -u origin master
