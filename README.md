@@ -16,13 +16,18 @@ Select Language:
 2. "JavaScript", set "User ext." "jsx"
 3. "SQL", set "User ext." "ddl"
 
-## userDefineLang_AHK.xml
+### userDefineLang_AHK.xml
 
 is a User-defined language highlighting for AutoHotKey scripts that works with "Dracula" theme.
 
 This is a good page to help setup AutoHotKey with Notepad++:
 
 https://github.com/jNizM/ahk_notepad-plus-plus
+
+### [Dracula Theme](https://draculatheme.com/notepad-plus-plus/)
+
+[Download](https://github.com/dracula/notepad-plus-plus/archive/master.zip) GitHub files and copy the "Dracula.xml" file into "%AppData%/Notepad++/themes"
+
 
 ## ahk-scripts
 
