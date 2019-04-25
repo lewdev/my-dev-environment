@@ -8,8 +8,8 @@
 
 
 :: "-y" automatically confirms "yes" to all
-choco install jdk8 -y
 choco install googlechrome -y
+choco install jdk8 -y
 choco install nodejs -y
 choco install yarn -y
 choco install visualstudiocode -y
@@ -22,6 +22,7 @@ choco install sumatrapdf -y
 choco install irfanview -y
 choco install unxutils -y
 choco install foobar2000 -y
- 
+choco install autohotkey -y
+
 :: For reference, updates all packages
 ::cup all -y
