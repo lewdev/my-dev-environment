@@ -28,10 +28,19 @@ https://github.com/jNizM/ahk_notepad-plus-plus
 
 [Download](https://github.com/dracula/notepad-plus-plus/archive/master.zip) GitHub files and copy the "Dracula.xml" file into "%AppData%/Notepad++/themes"
 
-
 ## ahk-scripts
 
 Various autohotkey scripts I use.
+
+## Add Startup Items
+
+Navigate to:
+
+> %USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+Drop the following shortcuts:
+1. my-hotkeys.ahk
+2. firefox
 
 ### my-hotkeys.ahk
 
