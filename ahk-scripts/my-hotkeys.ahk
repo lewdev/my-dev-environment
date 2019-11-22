@@ -5,14 +5,21 @@ My application global keyshortcuts
 + = shift
 */
 
-^+!I:: ;Chrome (I for Internet)
+#browserExe = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+browserExe = "C:\Program Files\Mozilla Firefox\firefox.exe"
+
+^+!F:: ;Facebook bookmarks folder
   SetTitleMatchMode RegEx
   id := WinExist("- Google Chrome$")
   if id {
     WinActivate, - Google Chrome$
+    Send ^t
+    Send ^l
+    Send {Blind}{Text}chrome://bookmarks/?id=554
+    Send {ENTER}
   }
   else {
-    Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe chrome://newtab
+    Run %browserExe% chrome://bookmarks/?id=554
   }
 Return
 
@@ -24,7 +31,7 @@ Return
     Send ^t
   }
   else {
-    Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe chrome://newtab
+    Run %browserExe% chrome://newtab
   }
 Return
 
@@ -35,7 +42,7 @@ Return
     WinActivate, ^Google Calendar -
   }
   else {
-    Run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"  --profile-directory=Default --app-id=kbmfljidgdloamegjlahbininaboaagk
+    Run %browserExe%  --profile-directory=Default --app-id=kbmfljidgdloamegjlahbininaboaagk
   }
 Return
 
@@ -46,28 +53,24 @@ Return
     WinActivate, Gmail$
   }
   else {
-    Run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"  --profile-directory=Default --app-id=kmhopmchchfpfdcdjodmpfaaphdclmlj
+    Run %browserExe%  --profile-directory=Default --app-id=kmhopmchchfpfdcdjodmpfaaphdclmlj
   }
 Return
 
-^+!F:: ;Facebook bookmarks folder
-  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe chrome://bookmarks/?id=760
-Return
-
 ^+!R:: ;My Github repository
-  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://github.com/lewdev?tab=repositories
+  Run %browserExe% https://github.com/lewdev?tab=repositories
 Return
 
 ^+!D:: ;My Github repository
-  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://drive.google.com
+  Run %browserExe% https://drive.google.com
 Return
 
 ^+!Y:: ;Youtube
-  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://www.youtube.com
+  Run %browserExe% https://www.youtube.com
 Return
 
 ^+!P:: ;Google Photos
-  Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://photos.google.com
+  Run %browserExe% https://photos.google.com
 Return
 
 ^+!N:: ;Notepad++
