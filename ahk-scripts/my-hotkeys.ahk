@@ -7,31 +7,32 @@ My application global keyshortcuts
 
 #browserExe = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 browserExe = "C:\Program Files\Mozilla Firefox\firefox.exe"
+browserName = "Mozilla Firefox"
 
 ^+!F:: ;Facebook bookmarks folder
   SetTitleMatchMode RegEx
-  id := WinExist("- Google Chrome$")
+  id := WinExist(browserName)
   if id {
-    WinActivate, - Google Chrome$
+    WinActivate, %browserName%
     Send ^t
     Send ^l
-    Send {Blind}{Text}chrome://bookmarks/?id=554
+    Send {Blind}{Text}https://www.facebook.com
     Send {ENTER}
   }
   else {
-    Run %browserExe% chrome://bookmarks/?id=554
+    Run %browserExe% https://www.facebook.com
   }
 Return
 
 ^+!T:: ;Chrome New Tab (T for Tab)
   SetTitleMatchMode RegEx
-  id := WinExist("- Google Chrome$")
+  id := WinExist(browserName)
   if id {
-    WinActivate, - Google Chrome$
+    WinActivate, %browserName%
     Send ^t
   }
   else {
-    Run %browserExe% chrome://newtab
+    Run %browserExe% about:newtab
   }
 Return
 
@@ -42,7 +43,7 @@ Return
     WinActivate, ^Google Calendar -
   }
   else {
-    Run %browserExe%  --profile-directory=Default --app-id=kbmfljidgdloamegjlahbininaboaagk
+    Run %browserExe% https://calendar.google.com/calendar/r
   }
 Return
 
@@ -53,7 +54,7 @@ Return
     WinActivate, Gmail$
   }
   else {
-    Run %browserExe%  --profile-directory=Default --app-id=kmhopmchchfpfdcdjodmpfaaphdclmlj
+    Run %browserExe% https://mail.google.com
   }
 Return
 
@@ -61,7 +62,7 @@ Return
   Run %browserExe% https://github.com/lewdev?tab=repositories
 Return
 
-^+!D:: ;My Github repository
+^+!D:: ;Google Drive
   Run %browserExe% https://drive.google.com
 Return
 
@@ -77,13 +78,3 @@ Return
   Run C:\Program Files\Notepad++\notepad++.exe
 Return
 
-^+!Q:: ;Squirrel SQL
-  SetTitleMatchMode RegEx
-  id := WinExist("^SQuirreL SQL Client")
-  if id {
-    WinActivate, ^SQuirreL SQL Client
-  }
-  else {
-    Run %USERPROFILE%\apps\squirrel-sql-snapshot-20180729_2224\squirrel-sql.bat
-  }
-Return
