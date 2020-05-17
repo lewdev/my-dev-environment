@@ -4,40 +4,45 @@ My application global keyshortcuts
 ! = alt
 + = shift
 */
-
-#browserExe = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+;browserExe = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 browserExe = "C:\Program Files\Mozilla Firefox\firefox.exe"
+;browserName = "Google Chrome"
+browserName = "Mozilla Firefox"
+
+openUrlInBrowser(url)
+{
+}
 
 ^+!F:: ;Facebook bookmarks folder
   SetTitleMatchMode RegEx
-  id := WinExist("- Google Chrome$")
+  id := WinExist("%browserName%$")
   if id {
-    WinActivate, - Google Chrome$
+    WinActivate, - %browserName%$
     Send ^t
     Send ^l
-    Send {Blind}{Text}chrome://bookmarks/?id=554
+    Send {Blind}{Text} "https://facebook.com"
     Send {ENTER}
   }
   else {
-    Run %browserExe% chrome://bookmarks/?id=554
+    Run %browserExe% "https://facebook.com"
   }
 Return
 
 ^+!T:: ;Chrome New Tab (T for Tab)
   SetTitleMatchMode RegEx
-  id := WinExist("- Google Chrome$")
+  id := WinExist("%browserName%$")
   if id {
-    WinActivate, - Google Chrome$
+    WinActivate, - %browserName%
     Send ^t
   }
   else {
-    Run %browserExe% chrome://newtab
+    Run %browserExe%
   }
 Return
 
 ^+!C:: ;Google Calendar
-  SetTitleMatchMode RegEx
   id := WinExist("^Google Calendar -")
+  SetTitleMatchMode RegEx
   if id {
     WinActivate, ^Google Calendar -
   }
