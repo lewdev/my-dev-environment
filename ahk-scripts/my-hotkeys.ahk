@@ -13,21 +13,6 @@ openUrlInBrowser(url)
 {
 }
 
-^+!F:: ;Facebook bookmarks folder
-  SetTitleMatchMode RegEx
-  id := WinExist("%browserName%$")
-  if id {
-    WinActivate, - %browserName%$
-    Send ^t
-    Send ^l
-    Send {Blind}{Text} "https://facebook.com"
-    Send {ENTER}
-  }
-  else {
-    Run %browserExe% "https://facebook.com"
-  }
-Return
-
 ^+!T:: ;Chrome New Tab (T for Tab)
   SetTitleMatchMode RegEx
   id := WinExist("%browserName%$")
@@ -39,49 +24,33 @@ Return
     Run %browserExe%
   }
 Return
-
+^+!F:: ;Facebook
+  Run %browserExe% https://facebook.com
+Return
 ^+!C:: ;Google Calendar
-  id := WinExist("^Google Calendar -")
-  SetTitleMatchMode RegEx
-  if id {
-    WinActivate, ^Google Calendar -
-  }
-  else {
-    Run %browserExe%  --profile-directory=Default --app-id=kbmfljidgdloamegjlahbininaboaagk
-  }
+  Run %browserExe% https://calendar.google.com
 Return
-
-^+!G:: ;Gmail
-  SetTitleMatchMode RegEx
-  id := WinExist("- Gmail$")
-  if id {
-    WinActivate, Gmail$
-  }
-  else {
-    Run %browserExe%  --profile-directory=Default --app-id=kmhopmchchfpfdcdjodmpfaaphdclmlj
-  }
+^+!M:: ;Gmail
+  Run %browserExe% https://mail.google.com
 Return
-
 ^+!R:: ;My Github repository
   Run %browserExe% https://github.com/lewdev?tab=repositories
 Return
-
+^+!G:: ;My Github gists
+  Run %browserExe% https://gist.github.com/lewdev
+Return
 ^+!D:: ;My Github repository
   Run %browserExe% https://drive.google.com
 Return
-
 ^+!Y:: ;Youtube
   Run %browserExe% https://www.youtube.com
 Return
-
 ^+!P:: ;Google Photos
   Run %browserExe% https://photos.google.com
 Return
-
 ^+!N:: ;Notepad++
   Run C:\Program Files\Notepad++\notepad++.exe
 Return
-
 ^+!Q:: ;Squirrel SQL
   SetTitleMatchMode RegEx
   id := WinExist("^SQuirreL SQL Client")
