@@ -96,3 +96,20 @@ $ git stash apply stash@{0}
 
 $ git stash apply stash@{stash_index}
 ```
+
+## Catching up with master
+
+```
+git checkout master
+
+git pull
+
+git checkout name-of-my-branch
+
+git rebase master
+```
+
+## Rebasing is different
+
+* instead of merge, do a rebase. it will rewrite history on my branch.
+
