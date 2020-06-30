@@ -104,12 +104,15 @@ git checkout master
 
 git pull
 
-git checkout name-of-my-branch
+git checkout my-branch
 
 git rebase master
 ```
+or
+```
+git checkout master
 
-## Rebasing is different
+git pull
 
-* instead of merge, do a rebase. it will rewrite history on my branch.
-
+git rebase master my-branch
+```
