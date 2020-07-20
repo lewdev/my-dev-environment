@@ -30,6 +30,9 @@ Return
 ^+!G:: ;My Github gists
   Run %browserExe% https://gist.github.com/lewdev
 Return
+^+!H:: ;Google Hangouts
+  Run %browserExe% https://hangouts.google.com
+Return
 ^+!Y:: ;Youtube
   Run %browserExe% https://www.youtube.com
 Return
