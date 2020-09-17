@@ -12,6 +12,9 @@ browserName = "Mozilla Firefox"
 ^+!T:: ;New Tab (T for Tab)
   Run %browserExe% about:newtab
 Return
+^+!B:: ;Bitbucket
+  Run %browserExe% https://bitbucket.polarisalpha.com/dashboard
+Return
 ^+!F:: ;Facebook
   Run %browserExe% https://facebook.com
 Return
