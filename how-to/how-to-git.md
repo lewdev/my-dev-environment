@@ -97,6 +97,12 @@ Apply specific stash index (`0` for latest stash).
 ```
 $ git stash apply stash@{stash_index}
 ```
+View stash summary by index (`-p` to show details)
+```
+$ git stash show stash@{stash_index}
+
+$ git stash show -p stash@{stash_index}
+```
 
 ## Creating a new branch
 Flag `-b` will switch to the new branch. You can have a few commits on master already too, but it's not recommended.
