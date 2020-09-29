@@ -14,6 +14,54 @@ You'll probably want to create a .gitignore file right away, to indicate all of 
 $ printf "build/*\npublic/*" > .gitignore
 ```
 
+## Creating a new branch
+Flag `-b` will switch to the new branch. You can have a few commits on master already too, but it's not recommended.
+```
+git checkout -b <new branch>
+```
+
+This is shorthand for:
+```
+$ git branch <new branch>
+
+$ git checkout <new branch>
+```
+
+Then push it upstream:
+```
+git push --set-upstream origin <new branch>
+```
+
+## Using git stash
+List all stashes:
+```
+$ git stash list
+```
+Stash everything including untracked files:
+
+*DO NOT use `git stash --all` because it will include ignored files!
+```
+$ git stash -u
+```
+Give stashed files a name:
+```
+$ git stash save "my_stash_name"
+```
+Apply last stash to current branch:
+```
+$ git stash apply
+```
+Apply specific stash index (`0` for latest stash).
+```
+$ git stash apply stash@{stash_index}
+```
+View stash summary by index (`-p` to show details)
+```
+$ git stash show stash@{stash_index}
+
+$ git stash show -p stash@{stash_index}
+```
+
 ## Add all of the relevant files and commit
 
 ```
@@ -73,47 +121,6 @@ Or amend a previous commit
 $ git add file-i-forgot-to-add.html
 
 $ git commit --amend -m "Add the remaining file"
-```
-## Using git stash
-List all stashes:
-```
-$ git stash list
-```
-Stash everything including untracked files:
-
-*DO NOT use `git stash --all` because it will include ignored files!
-```
-$ git stash -u
-```
-Give stashed files a name:
-```
-$ git stash save "my_stash_name"
-```
-Apply last stash to current branch:
-```
-$ git stash apply
-```
-Apply specific stash index (`0` for latest stash).
-```
-$ git stash apply stash@{stash_index}
-```
-View stash summary by index (`-p` to show details)
-```
-$ git stash show stash@{stash_index}
-
-$ git stash show -p stash@{stash_index}
-```
-
-## Creating a new branch
-Flag `-b` will switch to the new branch. You can have a few commits on master already too, but it's not recommended.
-```
-git checkout -b <new branch>
-```
-This is shorthand for:
-```
-$ git branch <new branch>
-
-$ git checkout <new branch>
 ```
 
 ## Catching up with master
