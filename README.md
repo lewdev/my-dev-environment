@@ -52,6 +52,22 @@ has keyshortcuts to quickly access various things on my machine.
 
 1. "Darkest Theme"
 
+## Firefox Extensions
+
+| Extension Name         | Description                         |
+|------------------------|-------------------------------------|
+| Bypass Paywalls        | Bypass News Sites' Paywalls |
+| Cisco Webex Extension  | Join Webex meetings using Firefox ™ |
+| Gitpod                 | Describe your dev environment as code and get fully prebuilt dev environments for any GitLab, GitHub and Bitbucket project. |
+| Honey                  | Automatically find and apply coupon codes when you shop online! |
+| LastPass               | Last Password you will ever need |
+| React Developer Tools  | Adds React debugging tools to the Firefox Developer Tools. |
+| Stylish                | Customize any website to your color scheme in 1 click, thousands of user styles with beautiful themes, skins & free backgrounds. |
+| uBlock Origin          | Finally, an efficient blocker. Easy on CPU and memory. |
+| Unpaywall              | Legally get full text of scholarly articles as you browse. |
+| Video DownloadHelper   | Download Videos from the Web |
+| Wiper                  | Black-list websites (URLs) on Google |
+
 ## Additional Apps
 
 ### T-Clock
