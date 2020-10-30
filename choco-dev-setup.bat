@@ -6,6 +6,7 @@
 :: Installs chocolately
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
+choco feature enable -n useFipsCompliantChecksums
 
 :: "-y" automatically confirms "yes" to all
 choco install googlechrome -y
@@ -23,6 +24,10 @@ choco install irfanview -y
 choco install unxutils -y
 choco install foobar2000 -y
 choco install autohotkey -y
+choco install putty.install -y
+choco install postman -y
+choco install 4k-video-downloader -y
+choco install slack -y
 
 :: For reference, updates all packages
 ::cup all -y
