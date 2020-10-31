@@ -1,22 +1,52 @@
-## my-dev-environment
+# my-dev-environment
 This project will document what I often use to setup my development environment.
 
-## choco-dev-setup.txt
+|||
+|-|-|
+| [how-to-git](how-to/how-to-git.md) | [how-to-sqlite](how-to/how-to-sqlite.sql) |
 
+
+# choco-dev-setup.bat
 List of choco commands used to install applications for my dev environment.
 
-## Notepad++
+# Notepad++
 
-### Associate additional file extensions with languages
-
-Navigate to: Settings > Style Configurator…
-
-Select Language:
+## Associate additional file extensions with languages
+Navigate to: Settings -> Style Configurator… -> Select Language:
 1. "CSS", set "User ext." "scss"
 2. "JavaScript", set "User ext." "jsx"
 3. "SQL", set "User ext." "ddl"
 
-### userDefineLang_AHK.xml
+## Settings -> Preferences...
+
+* General -> Toolbar: `Hide`
+* Language
+  * (uncheck) Make language menu compact
+  * Available Languages:
+    * Normal Text
+    * Batch
+    * CSS
+    * HTML
+    * Java
+    * JavaScript
+    * JSON
+    * JSP
+    * SQL
+    * XML
+    * PowerShell
+    * Python
+  * Tab Settings
+    * Tab size: 2
+    * (check) Replace by space
+* Highlighting
+  * (uncheck) Match whole word only
+
+## Npp Plugins
+* JSON Viewer
+* JSTool
+* XML Tools
+
+## userDefineLang_AHK.xml
 
 is a User-defined language highlighting for AutoHotKey scripts that works with "Dracula" theme.
 
@@ -24,15 +54,25 @@ This is a good page to help setup AutoHotKey with Notepad++:
 
 https://github.com/jNizM/ahk_notepad-plus-plus
 
-### [Dracula Theme](https://draculatheme.com/notepad-plus-plus/)
+## Custom Dark Themes for AutoHotKey and Markdown
+Copy the following to `%AppData%/Notepad++/userDefineLangs`
+* `npp/userDefinedLang-markdown.dracula.lewis.xml`
+* `npp/userDefineLang_AHK.xml`
 
-[Download](https://github.com/dracula/notepad-plus-plus/archive/master.zip) GitHub files and copy the "Dracula.xml" file into "%AppData%/Notepad++/themes"
+Delete `userDefinedLang-markdown.default.modern` since this one causes problems.
 
-## ahk-scripts
+## [Dracula Theme](https://draculatheme.com/notepad-plus-plus/)
+
+1. Copy the following to `%AppData%/Notepad++/themes`
+* `npp/Dracula.xml`
+
+2. To enable go to `Settings` -> `Style Configurator...` -> `Select theme:` and then select "Dracula"
+
+# ahk-scripts
 
 Various autohotkey scripts I use.
 
-## Add Startup Items
+# Add Startup Items
 
 Navigate to:
 
@@ -42,13 +82,13 @@ Drop the following shortcuts:
 1. my-hotkeys.ahk
 2. firefox
 
-### my-hotkeys.ahk
+## my-hotkeys.ahk
 
 has keyshortcuts to quickly access various things on my machine.
 
-## Eclipse setup
+# Eclipse setup
 
-### Install Plugins
+## Install Plugins
 
 1. "Darkest Theme"
 
@@ -75,4 +115,3 @@ has keyshortcuts to quickly access various things on my machine.
 2. Select "T-Clock Options"
 3. Select "Time Format" tab
 4. Check "Advanced clock format" and enter "ddd, m/dd\nh:nn tt"
-
