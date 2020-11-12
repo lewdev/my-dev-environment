@@ -1,17 +1,13 @@
 # My git commands
 
-## Create a new repo from an existing project
 
-[Source](https://kbroman.org/github_tutorial/pages/init.html)
+## Diff with branch
 
-Go into the directory containing the project.
+The filter can be used to get only certain file changes (A for added, C for copied, M for modified, D for deleted)
 ```
-$ git init
-```
-You'll probably want to create a .gitignore file right away, to indicate all of the files you don't want to track. Use git add .gitignore, too.
+git checkout branch-name
 
-```
-$ printf "build/*\npublic/*" > .gitignore
+git diff master..branch-name --diff-filter=ACM
 ```
 
 ## Creating a new branch
@@ -70,7 +66,21 @@ $ git add .
 $ git commit -m "Initial commit" -m "Description if needed..."
 ```
 
-## Connect it to Github
+## Create a new repo from an existing project
+
+[Source](https://kbroman.org/github_tutorial/pages/init.html)
+
+Go into the directory containing the project.
+```
+$ git init
+```
+You'll probably want to create a .gitignore file right away, to indicate all of the files you don't want to track. Use git add .gitignore, too.
+
+```
+$ printf "build/*\npublic/*" > .gitignore
+```
+
+## Connect repo to Github
 
 Go to Github and [create a new Repository](https://github.com/new).
 
