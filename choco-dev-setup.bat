@@ -26,6 +26,7 @@ choco install foobar2000 -y
 choco install autohotkey -y
 choco install putty.install -y
 choco install postman -y
+choco install imageresizerapp -y
 choco install 4k-video-downloader -y
 choco install slack -y
 
