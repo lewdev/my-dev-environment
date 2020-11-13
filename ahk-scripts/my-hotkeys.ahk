@@ -21,6 +21,9 @@ Return
 ^+!C:: ;Google Calendar
   Run %browserExe% https://calendar.google.com
 Return
+^+!E:: ;My Dev Environment
+  Run %browserExe% https://github.com/lewdev/my-dev-environment
+Return
 ^+!M:: ;Gmail
   Run %browserExe% https://mail.google.com
 Return
