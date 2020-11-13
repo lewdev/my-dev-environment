@@ -1,72 +1,13 @@
 # my-dev-environment
 This project will document what I often use to setup my development environment.
 
-|||
-|-|-|
-| [how-to-git](how-to/how-to-git.md) | [how-to-sqlite](how-to/how-to-sqlite.sql) |
+| | | |
+|-|-|-|
+| [how-to-git](how-to/how-to-git.md) | [how-to-sqlite](how-to/how-to-sqlite.sql) | [how-to-npp](how-to/how-to-npp.md) |
 
 
 # choco-dev-setup.bat
 List of choco commands used to install applications for my dev environment.
-
-# Notepad++
-
-## Associate additional file extensions with languages
-Navigate to: Settings -> Style Configurator… -> Select Language:
-1. "CSS", set "User ext." "scss"
-2. "JavaScript", set "User ext." "jsx"
-3. "SQL", set "User ext." "ddl"
-
-## Settings -> Preferences...
-
-* General -> Toolbar: `Hide`
-* Language
-  * (uncheck) Make language menu compact
-  * Available Languages:
-    * Normal Text
-    * Batch
-    * CSS
-    * HTML
-    * Java
-    * JavaScript
-    * JSON
-    * JSP
-    * SQL
-    * XML
-    * PowerShell
-    * Python
-  * Tab Settings
-    * Tab size: 2
-    * (check) Replace by space
-* Highlighting
-  * (uncheck) Match whole word only
-
-## Npp Plugins
-* JSON Viewer
-* JSTool
-* XML Tools
-
-## userDefineLang_AHK.xml
-
-is a User-defined language highlighting for AutoHotKey scripts that works with "Dracula" theme.
-
-This is a good page to help setup AutoHotKey with Notepad++:
-
-https://github.com/jNizM/ahk_notepad-plus-plus
-
-## Custom Dark Themes for AutoHotKey and Markdown
-Copy the following to `%AppData%/Notepad++/userDefineLangs`
-* `npp/userDefinedLang-markdown.dracula.lewis.xml`
-* `npp/userDefineLang_AHK.xml`
-
-Delete `userDefinedLang-markdown.default.modern` since this one causes problems.
-
-## [Dracula Theme](https://draculatheme.com/notepad-plus-plus/)
-
-1. Copy the following to `%AppData%/Notepad++/themes`
-* `npp/Dracula.xml`
-
-2. To enable go to `Settings` -> `Style Configurator...` -> `Select theme:` and then select "Dracula"
 
 # ahk-scripts
 
@@ -82,35 +23,34 @@ Drop the following shortcuts:
 1. my-hotkeys.ahk
 2. firefox
 
-## my-hotkeys.ahk
+# my-hotkeys.ahk
 
 has keyshortcuts to quickly access various things on my machine.
 
-# Eclipse setup
-
-## Install Plugins
+# Eclipse Plugins
 
 1. "Darkest Theme"
 
-## Firefox Extensions
+# Firefox Extensions
 
-| Extension Name         | Description                         |
-|------------------------|-------------------------------------|
-| Bypass Paywalls        | Bypass News Sites' Paywalls |
-| Cisco Webex Extension  | Join Webex meetings using Firefox ™ |
-| Gitpod                 | Describe your dev environment as code and get fully prebuilt dev environments for any GitLab, GitHub and Bitbucket project. |
-| Honey                  | Automatically find and apply coupon codes when you shop online! |
-| LastPass               | Last Password you will ever need |
-| React Developer Tools  | Adds React debugging tools to the Firefox Developer Tools. |
-| Stylish                | Customize any website to your color scheme in 1 click, thousands of user styles with beautiful themes, skins & free backgrounds. |
-| uBlock Origin          | Finally, an efficient blocker. Easy on CPU and memory. |
-| Unpaywall              | Legally get full text of scholarly articles as you browse. |
-| Video DownloadHelper   | Download Videos from the Web |
-| Wiper                  | Black-list websites (URLs) on Google |
+| Extension Name                                                                        | Description                         |
+|---------------------------------------------------------------------------------------|-------------------------------------|
+| [Bypass Paywalls](https://github.com/iamadamdev/bypass-paywalls-chrome)               | Bypass News Sites' Paywalls |
+| [Cisco Webex](https://addons.mozilla.org/en-US/firefox/addon/cisco-webex-extension/)  | Join Webex meetings using Firefox |
+| [Gitpod](https://addons.mozilla.org/en-US/firefox/addon/gitpod/)                      | Describe your dev environment as code and get fully prebuilt dev environments for any GitLab, GitHub and Bitbucket project. |
+| [Honey](https://addons.mozilla.org/en-US/firefox/addon/honey/)                        | Automatically find and apply coupon codes when you shop online! |
+| [LastPass](https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/) | Last Password you will ever need |
+| [React Dev Tools](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)     | Adds React debugging tools to the Firefox Developer Tools. |
+| [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/)                    | Customize any website to your color scheme in 1 click, thousands of user styles with beautiful themes, skins & free backgrounds. |
+| [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)        | Finally, an efficient blocker. Easy on CPU and memory. |
+| [Unpaywall](https://addons.mozilla.org/en-US/firefox/addon/unpaywall/)                | Legally get full text of scholarly articles as you browse. |
+| [Video DownloadHelper](https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/) | Download Videos from the Web |
+| [Wiper](https://addons.mozilla.org/en-US/firefox/addon/wiper/)                        | Black-list websites (URLs) on Google |
 
 ## Additional Apps
 
-### T-Clock
+## T-Clock
+[Download T-Clock](https://github.com/White-Tiger/T-Clock)
 1. Right-click Date/Time on Taskbar
 2. Select "T-Clock Options"
 3. Select "Time Format" tab
