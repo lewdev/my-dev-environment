@@ -13,7 +13,7 @@ browserName = "Mozilla Firefox"
   Run %browserExe% about:newtab
 Return
 ^+!B:: ;Bitbucket
-  Run %browserExe% https://bitbucket.polarisalpha.com/dashboard
+  Run %browserExe% https://bitbucket.parsons.us/dashboard
 Return
 ^+!F:: ;Facebook
   Run %browserExe% https://facebook.com
