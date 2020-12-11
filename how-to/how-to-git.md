@@ -58,8 +58,13 @@ $ git stash show stash@{stash_index}
 $ git stash show -p stash@{stash_index}
 ```
 
-## Add all of the relevant files and commit
+Delete all stashes (See bottom of [git documentation](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-stash.html) on recovering cleared stashes)
+```
+git stash clear
+```
 
+
+## Add all of the relevant files and commit
 ```
 $ git add .
 
