@@ -35,7 +35,7 @@ Navigate to: Settings -> Style Configurator… -> Select Language:
 * JSTool
 * XML Tools
 
-## userDefineLang_AHK.xml
+## userDefineLang_AutoHotKey.xml
 
 is a User-defined language highlighting for AutoHotKey scripts that works with "Dracula" theme.
 
