@@ -1,5 +1,10 @@
 # My git commands
 
+# Cleaning the repo
+```
+git fetch --prune
+```
+"It will connect to a shared remote repository remote and fetch all remote branch refs. It will then delete remote refs that are no longer in use on the remote repository." Source: [Git Prune (Atlassian)](https://www.atlassian.com/git/tutorials/git-prune)
 
 ## Diff with branch
 
