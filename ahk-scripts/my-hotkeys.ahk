@@ -24,6 +24,9 @@ Return
 ^+!E:: ;My Dev Environment
   Run %browserExe% https://github.com/lewdev/my-dev-environment
 Return
+^+!L:: ;My Portfolio
+  Run %browserExe% https://lewdev.github.io
+Return
 ^+!M:: ;Gmail
   Run %browserExe% https://mail.google.com
 Return
