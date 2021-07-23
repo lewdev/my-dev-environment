@@ -1,3 +1,5 @@
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+
 ; Open Settings: Default Apps
 Run %windir%\system32\control.exe /name Microsoft.DefaultPrograms /page pageDefaultProgram\pageAdvancedSettings
 
