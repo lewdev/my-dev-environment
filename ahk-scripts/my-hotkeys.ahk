@@ -1,6 +1,3 @@
-#NoEnv         ; Recommended for performance and compatibility with future AutoHotkey releases.
-#Warn          ; Enable warnings to assist with detecting common errors.
-SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 /*
 My application global keyshortcuts
 ^ = ctrl
@@ -12,6 +9,10 @@ browserExe = "C:\Program Files\Mozilla Firefox\firefox.exe"
 ;browserName = "Google Chrome"
 browserName = "Mozilla Firefox"
 
+#m:: ;Turn off monitor (Win + m)
+  Sleep 1000
+  SendMessage, 0x112, 0xF170, 2,, Program Manager
+return
 ^+!T:: ;New Tab (T for Tab)
   Run %browserExe% about:newtab
 Return
