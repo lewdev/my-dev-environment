@@ -16,6 +16,9 @@ return
 ^+!T:: ;New Tab (T for Tab)
   Run %browserExe% about:newtab
 Return
+^!t:: ;Bash
+  Run "C:\Program Files\Git\git-bash.exe" --cd=C:\Users\lewde\Documents\workspace
+Return
 ^+!B:: ;Bitbucket
   Run %browserExe% https://bitbucket.parsons.us/dashboard
 Return
