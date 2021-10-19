@@ -4,7 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 Run %windir%\system32\control.exe /name Microsoft.DefaultPrograms /page pageDefaultProgram\pageAdvancedSettings
 
 ; Wait for it to load
-Sleep, 5000
+Sleep, 20000
 
 winactivate, Settings
 ; Tab to Browser

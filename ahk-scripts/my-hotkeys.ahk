@@ -18,9 +18,12 @@ return
 return
 ^+!T:: ;New Tab (T for Tab)
   Run %browserExe% about:newtab
+  Sleep 800
+  winactivate, New Tab
+  SendInput, {Ctrl Down}l{Ctrl Up}
 Return
 ^!t:: ;Bash
-  Run "C:\Program Files\Git\git-bash.exe" --cd=C:\Users\lewde\Documents\workspace
+  Run "C:\Program Files\Git\git-bash.exe" --cd=%USERPROFILE%\Documents\workspace
 Return
 ^+!B:: ;Bitbucket
   Run %browserExe% https://bitbucket.parsons.us/dashboard
