@@ -9,6 +9,9 @@ browserExe = "C:\Program Files\Mozilla Firefox\firefox.exe"
 ;browserName = "Google Chrome"
 browserName = "Mozilla Firefox"
 
+^+!V:: ;Google Voice
+  Run %browserExe% https://voice.google.com
+return
 #m:: ;Turn off monitor (Win + m)
   Sleep 1000
   SendMessage, 0x112, 0xF170, 2,, Program Manager
