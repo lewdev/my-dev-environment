@@ -11,7 +11,7 @@ browserName = "Mozilla Firefox"
 
 ^+!1:: ;code
   Run %browserExe% "data:text/html`,<textarea id=d spellcheck=false><div id=o></div>`%0d<script>`%0do.innerHTML = 0;`%0d</script></textarea><iframe id=f></iframe><script>onkeypress=e=>(e.ctrlKey&&e.keyCode==13)||e.keyCode==10?f.srcdoc=d.value:0</script><style>*{box-sizing:border-box;margin:0}textarea`,iframe{width:50`%;height:100`%;vertical-align:top}textarea{resize:none;filter:invert(1)hue-rotate(180deg)}"
-  Sleep 300
+  Sleep 500
   WinActivate, ^data:text/html
   Sleep 300
   SendInput, {Ctrl Down}l{Ctrl Up}
