@@ -62,7 +62,8 @@ Return
   Run %browserExe% https://drive.google.com
 Return
 ^+!G:: ;My Github gists
-  Run %browserExe% https://gist.github.com/lewdev
+  ;Run %browserExe% https://gist.github.com/lewdev
+  Run %browserExe% https://lewdev.github.io/apps/gist-browser/
 Return
 ^+!Y:: ;Youtube
   Run %browserExe% https://www.youtube.com
