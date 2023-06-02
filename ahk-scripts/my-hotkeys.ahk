@@ -40,6 +40,9 @@ Return
 ^+!B:: ;Bitbucket
   Run %browserExe% https://bitbucket.parsons.us/dashboard
 Return
+^+!F:: ;Facebook
+  Run %browserExe% https://lewdev.github.io/apps/bdays/l.html
+Return
 ^+!C:: ;Google Calendar
   Run %browserExe% https://calendar.google.com
 Return

@@ -9,5 +9,5 @@ Loop
   ;MsgBox, The cursor moved 1 pixel to %x%, %ypos%.
   MouseMove, %x%, %ypos%
   ;MouseMove, %xpos%, %ypos%
-  Sleep, 300000 ; 5 minutes
+  Sleep, 240000 ; 4 minutes
 }
