@@ -10,7 +10,6 @@ choco feature enable -n useFipsCompliantChecksums
 
 :: "-y" automatically confirms "yes" to all
 choco install googlechrome -y
-choco install jdk8 -y
 choco install nodejs -y
 choco install yarn -y
 choco install visualstudiocode -y
