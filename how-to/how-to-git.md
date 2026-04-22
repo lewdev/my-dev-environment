@@ -2,6 +2,11 @@
 
 [Git Cheatsheet](https://twitter.com/FlycodeHQ/status/1502260086768427013)
 
+## Setup
+```
+git config --global user.name "Lewis Nakao"
+git config --global user.email "lewdev@gmail.com"
+```
 # Cleaning the repo
 ```
 git fetch --prune
